@@ -138,3 +138,8 @@ jobs:
           printf '\n<details>\n<summary>%s</summary>\n\n```\n%s\n```\n\n</details>\n' \
             "${pretty_logname}" "$(sed "${REGEX_MAKE_OUTPUT} ; ${REGEX_ANSI_COLOR}" < "${log}")" >> "${GITHUB_STEP_SUMMARY}"
         done
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: keyball-firmware
+        path: ./*.uf2
