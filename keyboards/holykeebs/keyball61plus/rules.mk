@@ -65,4 +65,4 @@ OLED_ENABLE = no
 # Disable other features to squeeze firmware size
 SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
-ENCODER_RESOLUTION = 2
+ENCODER_RESOLUTION = 1
